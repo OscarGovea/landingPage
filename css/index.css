@@ -1,0 +1,15 @@
+.navbar-brand{
+    font-family: 'Expletus Sans', cursive;
+    color: white !important;
+    font-size: 22px;
+}
+.nav-link{
+    color: white !important;
+}
+.nav-link:hover{
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+/* Hacer Hoverable el DropDown */
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
