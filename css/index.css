@@ -31,21 +31,34 @@
 
 .paddingTop{
 padding-top: 40px;
+padding-bottom: 40px;
 }
 
 #foto {
     -webkit-filter: grayscale(100%);
     filter: grayscale(80%);
+    height: 500px;
+    width: 500px;
 }
 #nombre{
     font-family: 'Playfair Display', serif;
-    padding-top: 20px;
+    padding-top: 100px;
+    padding-left: 15px;
+    text-align: center;
+    font-weight: bold;
 }
-h3{
-    text-align: center
-}
-#carrera{
+p{
     font-family: 'Playfair Display', serif;
     padding-top: 30px;
+    padding-left: 15px;
     text-align: center;
+}
+.card{
+    height: 200px;
+    width: 400px;
+}
+.card-body, .card-img-top, .card-img-bottom{
+    border: 0.5px solid black !important;
+    box-shadow: 8px 2px 5px #999;
+
 }
