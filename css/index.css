@@ -1,15 +1,51 @@
+.navbar{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background: rgba(0,0,0,1.0) !important;
+}
+/* nav.navbar {
+    background-color: #CC1414 !important;
+} */
 .navbar-brand{
-    font-family: 'Expletus Sans', cursive;
+    font-family: 'Playfair Display', cursive;
     color: white !important;
     font-size: 22px;
 }
+
 .nav-link{
     color: white !important;
 }
+
 .nav-link:hover{
     color: rgba(255, 255, 255, 0.7) !important;
 }
+
 /* Hacer Hoverable el DropDown */
 .dropdown:hover > .dropdown-menu {
     display: block;
+}
+
+.nav-item{
+    font-size: 20px;
+}
+
+.paddingTop{
+padding-top: 40px;
+}
+
+#foto {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(80%);
+}
+#nombre{
+    font-family: 'Playfair Display', serif;
+    padding-top: 20px;
+}
+h3{
+    text-align: center
+}
+#carrera{
+    font-family: 'Playfair Display', serif;
+    padding-top: 30px;
+    text-align: center;
 }
