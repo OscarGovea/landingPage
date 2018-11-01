@@ -22,15 +22,17 @@
     <link rel="stylesheet" href="css/hover.css">
     <!--AOS CSS,JS-->
     <link href="css/aos.css" rel="stylesheet">
-    <script src="js/aos.js"></script> 
+    <script src="js/aos.js"></script>
     <!--Propios-->
     <script src="js/indexJS.js"></script>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/png" href="img/OG_icon.ico" />
 </head>
 
 <body>
+    <!--NAVBAR-->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark animated fadeInDown">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark animated fadeInDown fixed-top">
             <a class="navbar-brand" href="#">Oscar Govea</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -58,29 +60,27 @@
                             <i class="fa fa-linkedin" aria-hidden="true"></i>
                         </a>
                     </li>
-                    <!-- <li class="nav-item dropdown p-2">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown link
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-                </li> -->
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item p-2 animated infinite pulse hvr-float-shadow">
+                        <a href="#relleno1" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item p-2 animated infinite pulse hvr-float-shadow">
+                        <a href="#relleno2" class="nav-link">Latest Works</a>
+                    </li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <!--Foto y Descripcion-->
+    <!--Photo y Description-->
     <div class="container paddingTop">
         <div class="row">
             <div class="col-md-4">
                 <img id="foto" class="animated fadeInLeft hvr-glow" src="img/perfilOscar.jpg">
             </div>
             <div class="col-md-8 animated fadeInRight">
-                <h3 id="nombre">Oscar Daniel Govea García</h3>
+                <h3 id="nombre" data-aos="zoom-in-right">Oscar Daniel Govea García</h3>
                 <p>Ing. en Sistemas Computacionales por la Universidad de Guanajuato</p>
                 <p>Desarollo Web</p>
                 <p>BackEnd | Administración de Datos | FrontEnd</p>
@@ -88,11 +88,15 @@
         </div>
     </div>
 
-    <!--Reseña-->
-    <section>
-        <div class="container paddingTop">
+    <div class="relleno" id="relleno1">
+    </div>
+
+    <!--Skills-->
+    <section id="skills">
+        <div class="container">
+            <h2 id="skillsCab" data-aos="fade-right">Skills</h2>
             <div class="row">
-                <div class="col-md-4 hvr-grow">
+                <div class="col-md-4 col-sm-12 hvr-grow">
                     <div class="card" data-aos="zoom-in-right" style="width: 18rem;">
                         <img class="card-img-top" src="img/card1.jpg" alt="card1" width="287px" height="209">
                         <div class="card-body">
@@ -103,7 +107,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 hvr-grow">
+                <div class="col-md-4 col-sm-12 hvr-grow">
                     <div class="card" data-aos="zoom-out-up" style="width: 18rem;">
                         <img class="card-img-top" src="img/card2.jpg" alt="card1" width="287px" height="209">
                         <div class="card-body">
@@ -114,7 +118,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 hvr-grow">
+                <div class="col-md-4 col-sm-12 hvr-grow">
                     <div class="card" data-aos="zoom-in-left" style="width:18rem;">
                         <img class="card-img-top" src="img/card3.jpg" alt="card3" width="287px" height="209">
                         <div class="card-body">
@@ -129,12 +133,62 @@
         </div>
     </section>
 
-    <br><br><br><br><br><br><br><br><br><br><br>
-    
+    <br><br><br><br><br><br><br><br><br>
+    <div class="relleno" id="relleno2">
+    </div>
+    <!--Latest Works-->
+    <section id="lastestWork">
+        <div class="container">
+            <h2 id="latestWorkCab" data-aos="fade-right">Latest Works</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="container" style="width:100%">
+                            <div class="front" style="background-image: url('./img/aamlogo.jpg')">
+                                <div class="inner">
+                                    <!-- <p>AAM</p> -->
+                                    <span>Soporte Técnico</span>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="inner">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat
+                                        velit
+                                        quae suscipit c.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                        <div class="col" ontouchstart="this.classList.toggle('hover');">
+                            <div class="container" style="width:100%">
+                                <div class="front" style="background-image: url('./img/aseglogo.png')">
+                                    <div class="inner">
+                                        <!-- <p>Auditoria Superior del Estado de Guanajuato</p> -->
+                                        <span>Desarrollo Web</span>
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="inner">
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat
+                                            velit
+                                            quae suscipit c.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                  
+            </div>
+        </div>
+    </section>
+
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
     <!--Footer-->
     <footer>
         <div class="container">
-            
+
         </div>
     </footer>
 </body>
